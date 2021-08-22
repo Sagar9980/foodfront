@@ -1,0 +1,72 @@
+@import "./const.css";
+
+.homepage-logo {
+  flex-grow: 1;
+}
+.navbar-menu-items {
+  flex-grow: 4;
+}
+.navbar-right {
+  flex-grow: 2;
+}
+.navbar-menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-menu-items span {
+  cursor: pointer;
+  color: var(--secondary-font-color);
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navbar-right {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4em;
+}
+.profile-logo,
+.shopping-cart-logo,
+.dropdown-options {
+  width: 25px;
+  cursor: pointer;
+}
+.shopping-cart {
+  position: relative;
+}
+.cart-amount {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #979797;
+  right: -10px;
+  top: -10px;
+}
+.homepage-banner-section {
+  padding-top: 0.25em;
+  z-index: -1;
+}
+.product-categories-section {
+  padding-top: 3em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.product-categories-content {
+  width: 95%;
+}
+.categories-heading {
+  text-align: left;
+  width: 100%;
+  color: var(--primary-font-color);
+}
+.horizontal-line {
+  border-top: 3px solid var(--main-theme-color);
+  border-radius: 20px;
+}

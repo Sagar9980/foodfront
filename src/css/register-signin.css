@@ -1,0 +1,170 @@
+@import "./const.css";
+/* CSS FOR REGISTER */
+.register-main {
+  padding: 30px 60px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-main-box {
+  padding: 0px;
+  height: 510px;
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 10px 3px rgba(235, 235, 235, 1);
+  -moz-box-shadow: 0px 5px 10px 3px rgba(235, 235, 235, 1);
+  box-shadow: 0px 5px 10px 3px rgba(235, 235, 235, 1);
+  display: flex;
+  justify-content: center;
+}
+.register-slideshow {
+  padding: 0px;
+
+  width: 100%;
+  max-width: 65%;
+}
+.imageOne {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-shadow: 0px 5px 10px 3px rgba(235, 235, 235, 1);
+  -moz-box-shadow: 0px 5px 10px 3px rgba(235, 235, 235, 1);
+  box-shadow: 0px 5px 10px 3px rgba(235, 235, 235, 1);
+}
+
+.register-forms {
+  width: 100%;
+  max-width: 35%;
+  display: flex;
+}
+
+/* Sign Up form Css */
+/* Sign In also added */
+.signup-form-container,
+.signin-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-form-header > h1,
+.signin-form-header > h1 {
+  color: var(--main-theme-color);
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  margin-top: 2em;
+}
+.signup-form-container > form,
+.signin-form-container > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signin-error {
+  width: 100%;
+  max-width: 250px;
+  font-size: 1rem;
+  background-color: var(--main-theme-color);
+  color: #fff;
+  padding: 3px 8px;
+  margin-top: 1em;
+}
+.signup-form-username > input,
+.signup-form-email > input,
+.signup-form-password > input,
+.signin-form-email > input,
+.signin-form-password > input {
+  margin-top: 20px;
+  width: 245px;
+  height: 25px;
+  border: 1px solid grey;
+  background-color: var(--main-bg-color);
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  padding: 3px 8px;
+  font-size: 13px;
+}
+.signup-form-button > button,
+.signin-form-button > button {
+  margin-top: 20px;
+  width: 265px;
+  height: 35px;
+  padding: 3px 8px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-theme-color);
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 13px;
+  outline: none;
+  margin-bottom: 25px;
+}
+.signup-form-button > button:hover,
+.signin-form-button > button:hover {
+  color: var(--main-bg-color);
+}
+.signup-other-option,
+.signin-other-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 265px;
+  margin-bottom: 30px;
+}
+.signup-other-option > p,
+.signin-other-option > p {
+  font-size: 14px;
+  color: var(--secondary-font-color);
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.signup-with-social,
+.signin-with-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+.signup-with-google,
+.signup-with-facebook,
+.signin-with-google,
+.signin-with-facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid grey;
+  cursor: pointer;
+  width: 125px;
+  height: 33px;
+}
+.signup-with-google > img,
+.signup-with-facebook > img,
+.signin-with-google > img,
+.signin-with-facebook > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.signup-with-google > p,
+.signup-with-facebook > p,
+.signin-with-google > p,
+.signin-with-facebook > p {
+  font-family: "Rubik", sans-serif;
+  color: var(--secondary-font-color);
+  font-size: 15px;
+}
+/* Responsive Css */
+@media only screen and (max-width: 950px) {
+  /* Register CSSS */
+  .register-main {
+    padding: 30px 20px !important;
+  }
+  .register-slideshow {
+    display: none;
+  }
+}

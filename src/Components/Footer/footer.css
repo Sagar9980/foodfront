@@ -1,0 +1,88 @@
+@import "../../css/const.css";
+
+.footer-container {
+  background-color: var(--main-theme-color);
+  width: 100%;
+  padding: 2em 0em;
+}
+.footer-contents {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cl-one,
+.cl-two,
+.cl-three,
+.cl-four {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.cl-one img {
+  width: 100%;
+  max-width: 200px;
+  background-color: #fff;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.cl-one p,
+.cl-two p,
+.cl-three p,
+.cl-four p {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 1em;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.cl-one p:hover,
+.cl-two p:hover,
+.facebook:hover,
+.instagram:hover,
+.youtube:hover {
+  opacity: 0.8;
+}
+
+.cl-one h4,
+.cl-two h4,
+.cl-three h4,
+.cl-four h4 {
+  margin-bottom: 1em;
+  color: #fff;
+  text-decoration: underline;
+  cursor: default;
+}
+.email,
+.contact,
+.location,
+.facebook,
+.instagram,
+.youtube {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.facebook,
+.instagram,
+.youtube {
+  cursor: pointer;
+}
+
+.cl-three span,
+.cl-four span {
+  color: #fff;
+  margin-left: 0.5em;
+}
+@media only screen and (max-width: 760px) {
+  .footer-contents {
+    flex-direction: column;
+  }
+  .cl-one,
+  .cl-two,
+  .cl-three,
+  .cl-four {
+    margin-bottom: 1em;
+  }
+}
